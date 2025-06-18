@@ -1,7 +1,8 @@
 services:
   - type: web
-    name: heatmap-oficinas
+    name: Assurant
     env: python
+    pythonVersion: "3.11.4"  # Adicione esta linha
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app --timeout 120 --workers 1
     autoDeploy: true
