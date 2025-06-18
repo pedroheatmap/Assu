@@ -2,10 +2,11 @@ services:
   - type: web
     name: Assurant
     env: python
-    pythonVersion: "3.11.8"  # Versão específica do Python 3.11
+    # A chave 'pythonVersion' é removida para evitar confusão.
+    # A variável de ambiente é a forma canônica de definir a versão.
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app --timeout 120 --workers 1
     autoDeploy: true
     envVars:
       - key: PYTHON_VERSION
-        value: 3.11
+        value: "3.11.8" # Defina a versão exata aqui
