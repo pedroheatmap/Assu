@@ -1,26 +1,21 @@
 # Dependências principais
-Flask==3.0.2
+Flask==2.3.2
 Flask-HTTPAuth==4.8.0
-pandas==2.2.1
-numpy==1.26.4
-scikit-learn==1.4.0
-geopy==2.4.1
+pandas==1.5.3  # Versão mais estável para Python 3.11
+numpy==1.24.3
+scikit-learn==1.3.0
+geopy==2.3.0
 
 # Servidor WSGI (para produção)
-gunicorn==21.2.0
-waitress==2.1.2  # Alternativa ao Gunicorn
+gunicorn==20.1.0
+waitress==2.1.2
 
-# Cache e otimização
+# Outras dependências
 diskcache==5.6.3
-psutil==5.9.5  # Para monitoramento de memória
-
-# Processamento de dados
-openpyxl==3.1.2  # Para exportar Excel
+psutil==5.9.5
+openpyxl==3.1.2
 XlsxWriter==3.1.2
-
-# Compactação (opcional, reduz uso de banda)
 Flask-Compress==1.13
-
 Flask-Login==0.6.2
-Werkzeug==3.0.1
+Werkzeug==2.3.7
 setuptools==69.1.0

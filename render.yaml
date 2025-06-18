@@ -2,7 +2,7 @@ services:
   - type: web
     name: Assurant
     env: python
-    pythonVersion: "3.11.4"  # Adicione esta linha
+    pythonVersion: "3.11.8"  # Versão específica do Python 3.11
     buildCommand: pip install -r requirements.txt
     startCommand: gunicorn app:app --timeout 120 --workers 1
     autoDeploy: true
